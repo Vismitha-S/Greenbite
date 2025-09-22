@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenBite - Home</title>
+  <link rel="stylesheet" href="CSS/workout.css">
+  <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+<body>
+
+<!--Header-->
+  <header>
+  <nav id="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="images/greenbites.png" alt="GreenBite Logo">
+    </div>
+
+  <!-- Hamburger -->
+  <div class="hamburger" id="hamburger">&#9776;</div>
+    
+
+    <!-- Navigation Bar Options -->
+    <ul class="menu-bar"id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="calculator.html">Calculator</a></li>
+      <li><a href="workout.html">Workout</a></li>
+      <li><a href="mindfulness.html">Mindfulness</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <main>
+  <h2>Let's Workout !</h2>
+  <p1>Working out with a timer boosts focus, motivation, and positivity. It keeps you committed, eliminates distractions, and helps you push harder within a set time. Each session feels more purposeful and rewarding, turning your workout into a structured, energizing routine that strengthens both your body and your mindset.
+  </p1>
+  <p>Select your body part and equipment to generate a workout plan.</p>
+
+  <!-- Dropdowns -->
+  <label for="bodyPart">Body Part: </label>
+  <select id="bodyPart">
+    <option value="arms">Arms</option>
+    <option value="legs">Legs</option>
+    <option value="full">Full Body</option>
+  </select>
+
+  <label for="equipment">Equipment: </label>
+  <select id="equipment">
+    <option value="none">None</option>
+    <option value="dumbbells">Dumbbells</option>
+    <option value="bands">Resistance Bands</option>
+  </select>
+
+
+  <button id="generateBtn">Generate</button>
+
+  <div id="workoutList"></div>
+</body>
+</main>
+
+ <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-left">
+        <div class="logo"><img src="images/greenbites.png" alt="GreenBite Logo">
+    </div>
+      <p class="follow-title">Follow us on</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://wa.me/" target="_blank">
+            <img src="images/whatsapp.png" alt="WhatsApp">
+        </a>
+        <a href="https://www.instagram.com/vismitha.aa" target="_blank">
+            <img src="images/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+            <img src="images/twitter.png" alt="Twitter">
+        </a>
+        </div>
+    </div>
+    <div class="footer-center">
+      <h3>About Us</h3>
+      <p class="wellness-text">
+       Fuel your body, feed your soul— GREENBITE is here to inspire your wellness journey. Small steps, big changes, and a happier, healthier you every day
+      </p>
+      <p class="copyright">© 2025 GreenBite. All rights reserved.</p>
+    </div>
+    <div class="footer-right">
+      <h3>Join to the GREENBITE community!</h3>
+      <p>Join our email list and become a patreon!</p>
+      <form>
+        <input id="email" type="email" placeholder="Enter your email" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </footer>
+  <script src="scripts/workout.js"></script>
+</body>
+</html>

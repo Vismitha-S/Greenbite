@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenBite - Home</title>
+  <link rel="stylesheet" href="CSS/calculator.css">
+  <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+<body>
+
+<!--Header-->
+  <header>
+  <nav id="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="images/greenbites.png" alt="GreenBite Logo">
+    </div>
+
+  <!-- Hamburger -->
+  <div class="hamburger" id="hamburger">&#9776;</div>
+    
+
+    <!-- Navigation Bar Options -->
+    <ul class="menu-bar"id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="calculator.html">Calculator</a></li>
+      <li><a href="workout.html">Workout</a></li>
+      <li><a href="mindfulness.html">Mindfulness</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<h1>Welcome to the Calorie & Nutrition Calculator !!</h1>
+<div class="container">
+  <p>Track your health easily with our Nutritional Calculator! Calculate your BMI, daily calorie needs (TDEE), and ideal macronutrient intake in seconds. Whether you're aiming to lose weight, gain muscle, or maintain your current shape, this tool gives you personalized results to support your wellness journey.</p>
+
+  <h2>Let's Check!</h2>
+  <form>
+  <div class="form-section">
+    <label>Age <input type="number" id="age"></label>
+    <label>Gender 
+      <input type="radio" name="gender" value="male">Male
+      <input type="radio" name="gender" value="female" checked>Female
+    </label>
+    <label>Height <input type="number" id="height"> cm</label>
+    <label>Weight <input type="number" id="weight"> kg</label>
+    <label>Activity Level 
+      <select id="activity">
+        <option value="1.2">Sedentary</option>
+        <option value="1.375">Lightly active</option>
+        <option value="1.55">Moderately active</option>
+        <option value="1.725">Very active</option>
+        <option value="1.9">Super active</option>
+      </select>
+    </label>
+    <br>
+    <button id="calculate" type="button">Calculate</button>
+    <button id="reset" type="button">Reset</button>
+  </div>
+  </form>
+  <h3>Results</h3>
+
+  <div class="results">
+    <div class="result-box">
+      <h2>BMR</h2>
+      <p id="bmr">0</p>
+    </div>
+    <div class="result-box">
+      <h2>TDEE</h2>
+      <p id="tdee">0</p>
+    </div>
+  </div>
+  
+
+  <h3>Macronutrients Chart</h3>
+  <div class="macros">
+    <div class="macro-box">
+      <h4>Carbohydrate</h4>
+      <div class="progress-bar"><div class="progress" id="carb-bar"></div></div>
+      <p class="macro-value" id="carbs">0 g</p>
+    </div>
+    <div class="macro-box">
+      <h4>Protein</h4>
+      <div class="progress-bar"><div class="progress" id="protein-bar"></div></div>
+      <p class="macro-value" id="protein">0 g</p>
+    </div>
+    <div class="macro-box">
+      <h4>Fats</h4>
+      <div class="progress-bar"><div class="progress" id="fat-bar"></div></div>
+      <p class="macro-value" id="fats">0 g</p>
+    </div>
+  </div>
+</div>
+
+
+ <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-left">
+        <div class="logo"><img src="images/greenbites.png" alt="GreenBite Logo">
+    </div>
+      <p class="follow-title">Follow us on</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://wa.me/" target="_blank">
+            <img src="images/whatsapp.png" alt="WhatsApp">
+        </a>
+        <a href="https://www.instagram.com/vismitha.aa" target="_blank">
+            <img src="images/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+            <img src="images/twitter.png" alt="Twitter">
+        </a>
+        </div>
+    </div>
+    <div class="footer-center">
+      <h3>About Us</h3>
+      <p class="wellness-text">
+       Fuel your body, feed your soul— GREENBITE is here to inspire your wellness journey. Small steps, big changes, and a happier, healthier you every day
+      </p>
+      <p class="copyright">© 2025 GreenBite. All rights reserved.</p>
+    </div>
+    <div class="footer-right">
+      <h3>Join to the GREENBITE community!</h3>
+      <p>Join our email list and become a patreon!</p>
+      <form>
+        <input id="email" type="email" placeholder="Enter your email" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </footer>
+  <script src="scripts/calculator.js"></script>
+</body>
+</html>

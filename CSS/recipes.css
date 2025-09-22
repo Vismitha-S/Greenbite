@@ -1,0 +1,504 @@
+/*Header*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #85A98F;
+  padding:0 20px;       
+  display: flex;
+  align-items: center;  
+  justify-content: space-between;
+  height: 80px;         
+  color: white;
+}
+
+.logo img {
+  height: 70px;          
+  width: auto;
+  margin-bottom: 9px;
+  padding-left: 70px;
+}
+
+.menu-bar {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding-right: 90px;
+}
+
+.menu-bar li {
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;      
+  transition: background-color 0.3s ease;
+}
+
+.menu-bar li:hover {
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.menu-bar li a {
+  color: white;
+  text-decoration: none;
+}
+.menu-bar li a:hover{
+    color: #1C352D;
+}
+
+/*Body*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; /* reset */
+  background-color: #f5f5f5;
+}
+
+main {
+  max-width: 1200px;
+  margin: 40px auto;  /* top/bottom spacing + center */
+  padding: 20px;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;   /* more space below filters */
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.filters input, .filters select, .filters button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.filters button:hover {
+  background: #A6B28B
+  
+}
+/* Click (Active) */
+.filters button:active {
+  transform: scale(1.1);  /* zoom a little */
+}
+/* 4×2 Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: transform 0.2s;
+  overflow: hidden;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.card h4 {
+  margin: 10px;
+  font-size: 18px;
+}
+.card p {
+  margin: 0 10px 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px 0;
+}
+.modal-content {
+  background: white;
+  margin: auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 12px;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+}
+.modal-content img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+th {
+  background: #eee;
+}
+
+/* Footer*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #85A98F;
+  color: white;
+  padding: 40px 60px;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.footer-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-left .logo img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+  margin-left: -30px; 
+}
+
+.follow-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #1C352D;
+  padding-left: 55px;
+}
+
+.socials {
+  display: flex;
+  margin-left: 50px; 
+}
+
+.socials img {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;   
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+
+.socials img:hover {
+  transform: scale(1.2);
+}
+
+.footer-center {
+  flex: 1.5;
+  text-align: center;
+  align-self: center;
+  font-size: 18px;
+  color: #1C352D;
+  padding: 0 20px;
+}
+
+.footer-center h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #1C352D;
+}
+
+.wellness-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #1C352D;
+}
+
+.copyright {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #1C352D;
+}
+
+.footer-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.footer-right h3 {
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1C352D;
+}
+
+.footer-right p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #1C352D;
+}
+
+.footer-right form {
+  display: flex;
+  margin-top: 10px;
+
+}
+
+.footer-right input {
+  width: 220px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.footer-right button {
+  padding: 8px 15px;
+  border: none;
+  background: #1C352D;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footer-right button:hover {
+  background-color: #A6B28B;
+  color: #1C352D;
+}
+
+/*Header for mobile responsivness*/
+/* Default styles */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+.menu-bar {
+  display: flex;
+  gap: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  header .logo img,
+  nav .logo img {
+    padding-right: 5px;
+    max-width: 150px;   /* keeps logo from stretching too much */
+  }
+
+  .menu-bar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background-color: #85A98F;
+    z-index: 1000; /*Need to be in fixed position*/
+  }
+
+  .menu-bar.active {
+    display: flex;
+  }
+
+  .menu-bar li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+ 
+/*Body mobile view*/
+ @media (max-width: 768px) {
+
+  /* Main body adjustments */
+  main {
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  /* Filters below search bar, stacked */
+  .filters {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  /* Search box in one row */
+  .search-box {
+    display: flex;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .search-box input {
+    flex: 1;
+    border-radius: 6px 0 0 6px;
+  }
+
+  .search-box button {
+    border-radius: 0 6px 6px 0;
+  }
+
+  /* Dropdown below search box */
+  #categorySelect {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 12px;
+  }
+
+  /* Card grid adjustments */
+  .card-grid {
+    grid-template-columns: repeat(1, 1fr); /* single column */
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .card img {
+    height: 180px; /* slightly taller for mobile */
+  }
+
+  .card h4 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+
+  /* Modal adjustments */
+  .modal-content {
+    width: 95%;
+    padding: 15px;
+    max-height: 95vh;
+    overflow-y: auto;
+  }
+
+  .modal-content img {
+    max-height: 250px;
+  }
+
+  .close {
+    top: 5px;
+    right: 10px;
+    font-size: 24px;
+  }
+
+  /* Footer adjustments */
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left .logo img {
+    margin-left: 0;
+    padding-left: 6px;
+  }
+}
+/* === Footer Mobile Styles === */
+  @media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    width: 100%;
+    align-items: center;
+  }
+
+  .footer-left .logo img {
+    margin-left: 0;
+    padding-left: 6px;
+  }
+
+  .follow-title {
+    padding-left: 0;
+  }
+
+  .socials {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .footer-right form {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .footer-right input {
+    width: 90%;
+    border-radius: 4px;
+  }
+
+  .footer-right button {
+    width: 90%;
+    border-radius: 4px;
+  }
+}

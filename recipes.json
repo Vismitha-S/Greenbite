@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Pancakes",
+    "category": "Breakfast",
+    "image": "images/pancakes.jpg",
+    "description": "Fluffy homemade pancakes",
+    "ingredients": ["2 cups flour", "2 eggs", "1 cup milk", "1 tbsp sugar"],
+    "steps": ["Mix ingredients", "Heat pan", "Pour batter", "Cook both sides"],
+    "nutrition": { "Calories": "250", "Protein": "6g", "Fat": "5g", "Carbs": "45g" }
+  },
+  {
+    "id": 2,
+    "title": "Omelette",
+    "category": "Breakfast",
+    "image": "images/omelette.jpg",
+    "description": "Classic cheese omelette",
+    "ingredients": ["3 eggs", "50g cheese", "Salt", "Pepper"],
+    "steps": ["Beat eggs", "Pour in pan", "Add cheese", "Fold and serve"],
+    "nutrition": { "Calories": "200", "Protein": "12g", "Fat": "15g", "Carbs": "2g" }
+  },
+  {
+    "id": 3,
+    "title": "Chicken Salad",
+    "category": "Lunch",
+    "image": "images/chicken_salad.jpg",
+    "description": "Healthy chicken salad",
+    "ingredients": ["200g chicken", "Lettuce", "Tomatoes", "Olive oil"],
+    "steps": ["Cook chicken", "Chop veggies", "Mix together", "Serve"],
+    "nutrition": { "Calories": "300", "Protein": "25g", "Fat": "12g", "Carbs": "10g" }
+  },
+  {
+    "id": 4,
+    "title": "Grilled Sandwich",
+    "category": "Lunch",
+    "image": "images/sandwich.jpg",
+    "description": "Crispy grilled sandwich",
+    "ingredients": ["Bread slices", "Cheese", "Tomato", "Butter"],
+    "steps": ["Butter bread", "Add filling", "Grill until golden"],
+    "nutrition": { "Calories": "280", "Protein": "10g", "Fat": "8g", "Carbs": "40g" }
+  },
+  {
+    "id": 5,
+    "title": "Steak Dinner",
+    "category": "Dinner",
+    "image": "images/steak.jpg",
+    "description": "Juicy grilled steak",
+    "ingredients": ["Beef steak", "Salt", "Pepper", "Garlic butter"],
+    "steps": ["Season steak", "Grill both sides", "Rest steak", "Serve"],
+    "nutrition": { "Calories": "500", "Protein": "40g", "Fat": "30g", "Carbs": "0g" }
+  },
+  {
+    "id": 6,
+    "title": "Pasta",
+    "category": "Dinner",
+    "image": "images/pasta.jpg",
+    "description": "Creamy Alfredo pasta",
+    "ingredients": ["Pasta", "Cream", "Garlic", "Parmesan cheese"],
+    "steps": ["Boil pasta", "Cook sauce", "Mix pasta & sauce", "Serve hot"],
+    "nutrition": { "Calories": "450", "Protein": "12g", "Fat": "18g", "Carbs": "60g" }
+  },
+  {
+    "id": 7,
+    "title": "Green Smoothie",
+    "category": "Smoothies",
+    "image": "images/green_smoothie.jpg",
+    "description": "Refreshing spinach smoothie",
+    "ingredients": ["Spinach", "Banana", "Yogurt", "Honey"],
+    "steps": ["Add all ingredients", "Blend until smooth", "Serve chilled"],
+    "nutrition": { "Calories": "180", "Protein": "6g", "Fat": "2g", "Carbs": "35g" }
+  },
+  {
+    "id": 8,
+    "title": "Berry Smoothie",
+    "category": "Smoothies",
+    "image": "images/berry_smoothie.jpg",
+    "description": "Mixed berry smoothie",
+    "ingredients": ["Blueberries", "Strawberries", "Milk", "Honey"],
+    "steps": ["Add all ingredients", "Blend until smooth", "Serve chilled"],
+    "nutrition": { "Calories": "200", "Protein": "5g", "Fat": "3g", "Carbs": "38g" }
+  }
+]

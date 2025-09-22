@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenBite - Home</title>
+  <link rel="stylesheet" href="CSS/contact.css">
+<body>
+
+<!--Header-->
+  <header>
+  <nav id="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="images/greenbites.png" alt="GreenBite Logo">
+    </div>
+
+  <!-- Hamburger -->
+  <div class="hamburger" id="hamburger">&#9776;</div>
+    
+
+    <!-- Navigation Bar Options -->
+    <ul class="menu-bar"id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="calculator.html">Calculator</a></li>
+      <li><a href="workout.html">Workout</a></li>
+      <li><a href="mindfulness.html">Mindfulness</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+
+  <div class="container">
+    <h2>Contact Us !</h2>
+    <p>
+      We’d love to hear from you! Whether you have questions, feedback, or need assistance, our team is here to help. Reach out to us through the form below, and we’ll get back to you as soon as possible. Your thoughts and inquiries are important to us, and we’re committed to providing prompt and helpful support.
+    </p>
+
+    <form id="contactForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" required>
+
+      <label for="email">E - Mail</label>
+      <input type="email" id="email" required>
+
+      <label for="message">Write a message</label>
+      <textarea id="message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="confirmation"></div>
+  </div>
+
+  <div class="bottom-section">
+    <div class="faq">
+      <h3>FAQs</h3>
+      <div class="accordion">
+        <button>What is GreenBite?</button>
+        <div class="panel">GreenBite is a wellness platform designed to help you live healthier through nutritious recipes, personalized calorie tracking, guided workouts, and mindfulness exercises. Everything is curated to support your overall well-being</div>
+
+        <button>Are the workouts suitable for beginners?</button>
+        <div class="panel">Absolutely! GreenBite offers workouts, from beginners to advanced users. Each exercise comes with guidance to ensure safety and effectiveness.</div>
+
+        <button>Does GreenBite include mindfulness exercises?</button>
+        <div class="panel">Yes! Our Mindfulness section offers guided breathing exercises, meditation timers, and relaxing ambient sounds to help reduce stress and improve focus.</div>
+      </div>
+    </div>
+    
+    <div class="map">
+      <h3>HQ Map</h3>
+      <!-- Replace with actual GreenBite HQ coordinates -->
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.26285936076!2d79.81265194999999!3d6.9270786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259594b12a4c7%3A0x7d1c8bbf5a71f2db!2sColombo!5e0!3m2!1sen!2slk!4v1694597491704!5m2!1sen!2slk" 
+        allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</body>
+ <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-left">
+        <div class="logo"><img src="images/greenbites.png" alt="GreenBite Logo">
+    </div>
+      <p class="follow-title">Follow us on</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://wa.me/" target="_blank">
+            <img src="images/whatsapp.png" alt="WhatsApp">
+        </a>
+        <a href="https://www.instagram.com/vismitha.aa" target="_blank">
+            <img src="images/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+            <img src="images/twitter.png" alt="Twitter">
+        </a>
+        </div>
+    </div>
+    <div class="footer-center">
+      <h3>About Us</h3>
+      <p class="wellness-text">
+       Fuel your body, feed your soul— GREENBITE is here to inspire your wellness journey. Small steps, big changes, and a happier, healthier you every day
+      </p>
+      <p class="copyright">© 2025 GreenBite. All rights reserved.</p>
+    </div>
+    <div class="footer-right">
+      <h3>Join to the GREENBITE community!</h3>
+      <p>Join our email list and become a patreon!</p>
+      <form>
+        <input id="email" type="email" placeholder="Enter your email" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </footer>
+  <script src="scripts/contact.js"></script>
+
+</html>
